@@ -133,13 +133,18 @@
     <ClCompile Include="Ex03_memalloc.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Ex04_memalloc.c">
+    <ClCompile Include="Ex04_memalloc_함수화.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Ex05_memalloc_대문자.c" />
+    <ClCompile Include="Ex05_memalloc_대문자.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Pb_야구게임.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="myHeader.h" />
+    <ClInclude Include="myHeader.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClInclude>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

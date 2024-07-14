@@ -15,19 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Ex02_전역vs정적.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Ex03_memalloc.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Ex04_memalloc_함수화.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Ex05_memalloc_대문자.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Pb_야구게임.c">
+    <ClCompile Include="Ex01_단일연결리스트.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

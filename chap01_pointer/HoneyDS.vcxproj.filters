@@ -36,5 +36,11 @@
     <ClCompile Include="Ex07_voidPtr.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PB1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PB2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
