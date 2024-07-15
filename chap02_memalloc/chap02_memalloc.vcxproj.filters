@@ -30,6 +30,9 @@
     <ClCompile Include="Pb_야구게임.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PB2_동적할당.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="myHeader.h">

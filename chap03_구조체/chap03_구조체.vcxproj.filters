@@ -27,5 +27,14 @@
     <ClCompile Include="Ex04_구조체와 동적할당.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PB1.약수.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PB2.역순저장.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PB2.역순저장M2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
