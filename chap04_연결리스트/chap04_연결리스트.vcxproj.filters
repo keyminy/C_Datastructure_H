@@ -18,6 +18,9 @@
     <ClCompile Include="Ex01_단일연결리스트.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PB1.주민등록문자열.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="myHeader.h">
