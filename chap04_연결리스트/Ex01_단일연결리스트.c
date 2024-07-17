@@ -13,12 +13,14 @@ node* head = NULL; // 첫번째 노드의 주소를 저장하는 포인터 변수
 
 void insertFrontNode(int data);
 void insertRearNode(int data);
+void insertKthNode(int data,int k);
 void traversalNode();
 int getNodeCount();
 int removeFrontNode();
 int removeAllNode();
 int removeRearNode();
 int removeKthNode(int k);
+int removeTargetNode(int target);
 node* searchNode(int target);
 
 int main() {
@@ -59,6 +61,15 @@ int main() {
 			insertRearNode(data);
 			break;
 		case 3:
+			printf("\n\n삽입할 정수 입력: ");
+			scanf("%d", &data);
+			bufferClear();
+
+			printf("\n\n몇 번째 노드를 삽입하시겠습니까? ");
+			scanf("%d", &k);
+			bufferClear();
+
+			insertKthNode(data, k);
 			break;
 		case 4:
 			if (removeFrontNode()) {
@@ -86,6 +97,16 @@ int main() {
 			}
 			break;
 		case 7:
+			printf("\n\n삭제할 정수 입력: ");
+			scanf("%d", &data);
+			bufferClear();
+			// removeTargetNode : target 노드 제거 성공하면 1,실패하면 0
+			if (removeTargetNode(data)) {
+				printf("\n\n\t\t%d 노드 제거를 성공했습니다.\n", data);
+			}
+			else {
+				printf("\n\n\t\t%d 노드 제거를 실패했습니다.\n", data);
+			}
 			break;
 		case 8:
 			printf("\n\n몇 번째 노드를 삭제하시겠습니까? ");
@@ -169,6 +190,35 @@ void insertRearNode(int data)
 	}
 	// 이렇게하면 curNode는 마지막 Node에 Stop!!
 	// 마지막 Node에 newNode를 연결
+	curNode->next = newNode;
+}
+
+void insertKthNode(int data, int k)
+{
+	int nodeCount = getNodeCount(); // 노드의 개수를 구해 리턴하는 함수
+	if (k < 1 || k > nodeCount + 1) {
+		printf("\n\n\t\t잘못된 k값 입력 범위, 노드 삽입에 실패했습니다.\n");
+		return;
+	}
+	node* newNode;
+	// 새로운 노드 생성
+	newNode = (node*)malloc(sizeof(node));
+	newNode->value = data;
+	newNode->next = NULL;
+
+	if (k == 1) {
+		// head만들기
+		newNode->next = head;
+		head = newNode;
+		return;
+	}
+	node* curNode = head;
+	// curNode : 삽입할 위치 이전 노드에서 멈춤
+	for (int i = 0; i < k - 2; i++) {
+		curNode = curNode->next;
+	}
+	// 중간 노드로 연결(마지막 노드까지 연결 확인)
+	newNode->next = curNode->next;
 	curNode->next = newNode;
 }
 
@@ -295,7 +345,37 @@ int removeKthNode(int k)
 	prevNode->next = delNode->next;
 	free(delNode); //중간노드 삭제
 	return 1;
-} 
+}
+int removeTargetNode(int target)
+{
+	if (head == NULL) {
+		return 0;
+	}
+	node* delNode = NULL;
+	node* prevNode = NULL;
+	/* 삭제할 노드가 head인 경우 */
+	if (head->value == target) {
+		//delNode = head;
+		//head = head->next;
+		//free(delNode);
+		return removeFrontNode();
+	}
+	/* 삭제할 노드가 head가 아닌경우(중간삭제) */
+	delNode = head;
+	prevNode = head;
+	while (delNode->next != NULL) {
+		delNode = delNode->next; // delNode는 prev보다 항상 앞에 1칸 앞서있음을 보장
+		if (delNode->value == target) {
+			prevNode->next = delNode->next;
+			free(delNode);
+			return 1;
+		}
+		prevNode = prevNode->next;
+	}
+	// 반복문을 탈출한 경우 target을 못찾음
+	return 0;
+}
+
 
 node* searchNode(int target)
 {
