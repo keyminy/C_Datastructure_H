@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{55f31d8b-b3c1-493b-a609-17ddc8bb4998}</ProjectGuid>
-    <RootNamespace>chap04연결리스트</RootNamespace>
+    <ProjectGuid>{d62c1e1c-c3f1-4fcd-829d-431c3c2a23e0}</ProjectGuid>
+    <RootNamespace>chap05이중연결리스트</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,12 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Ex01_단일연결리스트.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="PB1.주민등록문자열.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="Ex01_이중연결리스트.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="myHeader.h" />
