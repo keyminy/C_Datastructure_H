@@ -110,6 +110,7 @@ void insertFrontDnode(int data)
 	head = newNode;
 }
 
+
 void traversalDNode()
 {
 	DNode* curNode; // 방문한 노드의 주소를 저장하는 포인터변수(8byte)
