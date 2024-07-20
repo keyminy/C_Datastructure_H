@@ -32,6 +32,7 @@ void binaryConversion(node** pHead, int n)
 	while (n > 0) {
 		int mod = n % 2;
 		// insertFrontNode함수에 head의 주소값 &head넘겨줘야함
+		//insertFrontNode(&(*pHead), mod);
 		insertFrontNode(pHead,mod);
 		n /= 2;
 	}
