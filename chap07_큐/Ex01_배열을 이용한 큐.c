@@ -13,12 +13,12 @@ typedef struct queue {
 	int count; //저장된 원소의 개수
 } queue;
 
-void enqueue(queue* ptr,int data);
+void enqueue(queue* ptr, int data);
 void dequeue(queue* ptr);
 void displayQueue(const queue* ptr);
 
 int main() {
-	int choice,data;
+	int choice, data;
 	queue que; // 구조체 변수(32byte) 선언
 	que.rear = que.front = que.count = 0;
 	while (1) {
@@ -38,7 +38,7 @@ int main() {
 
 			break;
 		case 2:
-			dequeue(&que); 
+			dequeue(&que);
 			break;
 		case 3:
 			displayQueue(&que);

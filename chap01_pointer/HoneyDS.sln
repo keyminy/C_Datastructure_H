@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chap05_이중연결리스�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chap06_stack", "..\chap06_stack\chap06_stack.vcxproj", "{F3E2E3E1-DE32-4D0B-A00B-FE1165AAE211}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chap07_큐", "..\chap07_큐\chap07_큐.vcxproj", "{D1BBC74E-363D-43FF-B238-FFDFB2E3A217}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{F3E2E3E1-DE32-4D0B-A00B-FE1165AAE211}.Release|x64.Build.0 = Release|x64
 		{F3E2E3E1-DE32-4D0B-A00B-FE1165AAE211}.Release|x86.ActiveCfg = Release|Win32
 		{F3E2E3E1-DE32-4D0B-A00B-FE1165AAE211}.Release|x86.Build.0 = Release|Win32
+		{D1BBC74E-363D-43FF-B238-FFDFB2E3A217}.Debug|x64.ActiveCfg = Debug|x64
+		{D1BBC74E-363D-43FF-B238-FFDFB2E3A217}.Debug|x64.Build.0 = Debug|x64
+		{D1BBC74E-363D-43FF-B238-FFDFB2E3A217}.Debug|x86.ActiveCfg = Debug|Win32
+		{D1BBC74E-363D-43FF-B238-FFDFB2E3A217}.Debug|x86.Build.0 = Debug|Win32
+		{D1BBC74E-363D-43FF-B238-FFDFB2E3A217}.Release|x64.ActiveCfg = Release|x64
+		{D1BBC74E-363D-43FF-B238-FFDFB2E3A217}.Release|x64.Build.0 = Release|x64
+		{D1BBC74E-363D-43FF-B238-FFDFB2E3A217}.Release|x86.ActiveCfg = Release|Win32
+		{D1BBC74E-363D-43FF-B238-FFDFB2E3A217}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

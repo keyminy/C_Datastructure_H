@@ -37,7 +37,7 @@ void binaryConversion(node** pHead, int n)
 	}
 }
 
-void traversalNode(const node* head)
+void traversalNode(node* head)
 {
 	node* curNode; // 방문한 노드의 주소를 저장하는 포인터변수(8byte)
 	if (head == NULL) {
