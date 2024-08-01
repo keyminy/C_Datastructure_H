@@ -15,18 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="myHeader.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Ex02_연결리스트를 이용한 큐.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Ex01_배열을 이용한 큐.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Ex03_요세푸스의 큐.c">
+    <ClCompile Include="Ex01_BST.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

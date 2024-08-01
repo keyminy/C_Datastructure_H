@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chap08_재귀함수", "..\c
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chap09_tree", "..\chap09_tree\chap09_tree.vcxproj", "{07069153-B2E2-4B85-9DEB-3BAF533FC027}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chap10_BST", "..\chap10_BST\chap10_BST.vcxproj", "{CA5E8691-7479-47FF-B6E4-CBE28162A24D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -111,6 +113,14 @@ Global
 		{07069153-B2E2-4B85-9DEB-3BAF533FC027}.Release|x64.Build.0 = Release|x64
 		{07069153-B2E2-4B85-9DEB-3BAF533FC027}.Release|x86.ActiveCfg = Release|Win32
 		{07069153-B2E2-4B85-9DEB-3BAF533FC027}.Release|x86.Build.0 = Release|Win32
+		{CA5E8691-7479-47FF-B6E4-CBE28162A24D}.Debug|x64.ActiveCfg = Debug|x64
+		{CA5E8691-7479-47FF-B6E4-CBE28162A24D}.Debug|x64.Build.0 = Debug|x64
+		{CA5E8691-7479-47FF-B6E4-CBE28162A24D}.Debug|x86.ActiveCfg = Debug|Win32
+		{CA5E8691-7479-47FF-B6E4-CBE28162A24D}.Debug|x86.Build.0 = Debug|Win32
+		{CA5E8691-7479-47FF-B6E4-CBE28162A24D}.Release|x64.ActiveCfg = Release|x64
+		{CA5E8691-7479-47FF-B6E4-CBE28162A24D}.Release|x64.Build.0 = Release|x64
+		{CA5E8691-7479-47FF-B6E4-CBE28162A24D}.Release|x86.ActiveCfg = Release|Win32
+		{CA5E8691-7479-47FF-B6E4-CBE28162A24D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
