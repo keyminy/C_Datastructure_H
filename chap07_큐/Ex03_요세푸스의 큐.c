@@ -11,6 +11,7 @@ typedef struct node {
 node* head = NULL;
 node* tail = NULL;
 
+node* createNode(int value);
 void standby(int n);
 void showList(int n);
 void josephus(int k);
@@ -60,6 +61,15 @@ void standby(int n)
 	tail->next = head; // Makes a circular list
 }
 
+node* createNode(int value)
+{
+	node* newNode = (node*)malloc(sizeof(node)); // 구조체 변수(노드) 생성한다.
+	newNode->value = value;
+	newNode->next = NULL;
+
+	return NULL;
+}
+
 void showList(int n) {
 	node* curNode = head;
 	if (head == NULL) {
@@ -72,6 +82,7 @@ void showList(int n) {
 	}
 	printf("\n");
 }
+
 
 ////Deletes every kth node until one node has been left
 // TODO...
